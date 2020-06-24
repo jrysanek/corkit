@@ -65,9 +65,10 @@ _**Cork It** is perfect place for a messy planner! Cork it is a digital cork boa
 
 
 
-![Desktop Home](https://www.figma.com/file/ohMSaLc9DFAKfcQqYCGZC1/Untitled?node-id=6%3A9)
-
-- Desktop Home
+<details>
+<summary>Desktop- Home</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85627948-509dca80-b63d-11ea-90b8-e21583b4ba9a.png" >
+</details>
 
 ![Dummy Link](url)
 
