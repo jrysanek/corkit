@@ -70,21 +70,27 @@ _**Cork It** is perfect place for a messy planner! Cork it is a digital cork boa
 <img src="https://user-images.githubusercontent.com/61858219/85627948-509dca80-b63d-11ea-90b8-e21583b4ba9a.png" >
 </details>
 
-![Dummy Link](url)
+<details>
+<summary>Desktop- SignUp</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85628042-77f49780-b63d-11ea-8d0e-ecd2d39ef5cb.png" >
+</details>
 
-- Desktop Hero
+<details>
+<summary>Desktop- LogIn</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85628157-a5414580-b63d-11ea-84d3-7cfc47993c30.png" >
+</details>
 
-![Dummy Link](url)
 
-- Resource Index
+<details>
+<summary>Desktop- Login-Landing</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85628209-bee28d00-b63d-11ea-8a7c-acc3e87aecd2.png" >
+</details>
 
-![Dummy Link](url)
+<details>
+<summary>Desktop- User-Logged-In</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85628274-e0437900-b63d-11ea-8de2-37384cc84ad8.png" >
+</details>
 
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
 
 ![Dummy Link](url)
 
