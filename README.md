@@ -95,45 +95,68 @@ _**Cork It** is perfect place for a messy planner! Cork it is a digital cork boa
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+ 
 
 ``` structure
 
 src
 |__ assets/
       |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ shared/
+          |__ Nav.jsx
+      |__ SignUp.jsx
+      |__ Login.jsx
+      |__ LogOut.jsx
+      |__ Landing.jsx
+      |__ Room.jsx
+      |__ Create.jsx
+      |__ Update.jsx
+      |__ Delete.jsx
+      
 |__ services/
+      |__ API
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Shared    | functional |   n   |   n   | _Will containe the Nav buttons._               |
+| SignUp   | functional |   y  |   y   | _Will give the user the ability to make an account._       |
+|  Login    |   functional    |   y   |  y  | _Allows user to Login to account._      |
+| Landing | functional |   y   |   y   | _Where the user is sent to control all Rooms after Login._                 |
+|    Footer    | functional |   n   |   n   | _The footer will show copyright info._ |
+|    Logout    | functional |   y   |   n   | _Allows user to sign out of account and return to homepage._ |
+|    Room    | functional |  y   |   y   | _The show page for landing, allows full CRUD._ |
+
+
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Create Backend framework    |    H    |     6 hrs      |      hrs     |     hrs    |
+| Create Frontend framework |    H     |     6 hrs      |      hrs     |     TBD     |
+|Add Auth to backend  |    H     |     6 hrs      |      hrs     |     TBD     |
+| Connect backend and front end |    H     |     4 hrs      |     hrs     |     TBD     |
+| CRUD BACKEND |    H     |     8 hrs      |      hrs     |     TBD     |
+| CRUD Frontend |    H     |     8 hrs      |      hrs     |     TBD     |
+| Test backend functionality |    H     |     3 hrs      |      hrs     |     TBD     |
+| Test front end functionality |    H     |    3  hrs      |      hrs     |     TBD     |
+| Add Styling |    H     |     8 hrs      |      hrs     |     TBD     |
+| Finish Styling|    H     |     7 hrs      |      hrs     |     TBD     |
+| Testing |    H     |     6 hrs      |       hrs     |     TBD     |
+|Deploy |    H     |     6 hrs      |       hrs     |     TBD     |
+| TOTAL               |          |     hrs      |     hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
 
 <br>
 
