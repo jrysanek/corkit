@@ -92,9 +92,57 @@ _**Cork It** is perfect place for a messy planner! Cork it is a digital cork boa
 </details>
 
 
-![Dummy Link](url)
+<details>
+<summary>Tablet- Home</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85754066-c6a43f00-b6da-11ea-8f14-e059f7ad0dc3.png" >
+</details>
 
-- Mobile Resource Index
+
+<details>
+<summary>Tablet- Sign-Up</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85754352-fc492800-b6da-11ea-906f-acc0f5745831.png" >
+</details>
+
+<details>
+<summary>Tablet- Login</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85754435-0cf99e00-b6db-11ea-906f-0a6f18a08e3f.png" >
+</details>
+
+<details>
+<summary>Tablet-Login-Landing</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85754529-200c6e00-b6db-11ea-80e5-e8fa0ed32b21.png" >
+</details>
+
+<details>
+<summary>Tablet- User-Logged-In</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85754702-4a5e2b80-b6db-11ea-9e08-ff434f044976.png" >
+</details>
+
+
+<details>
+<summary>Mobile- Home</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85755015-9315e480-b6db-11ea-85d8-4c93e580a721.png" >
+</details>
+
+<details>
+<summary>Mobile-Login</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85755093-a1fc9700-b6db-11ea-935f-18355be862af.png" >
+</details>
+
+<details>
+<summary>Mobile-Sign-Up</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85755196-b93b8480-b6db-11ea-9f00-f803b95d05b5.png" >
+</details>
+
+<details>
+<summary>Mobile- Landing-Login</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85755270-c9ebfa80-b6db-11ea-97fe-8292caef5e4d.png" >
+</details>
+
+<details>
+<summary>Mobile- User-Login</summary>
+<img src="https://user-images.githubusercontent.com/61858219/85755374-e12ae800-b6db-11ea-8b0f-37730ebd4cb5.png" >
+</details>
 
 #### Component Tree
 
