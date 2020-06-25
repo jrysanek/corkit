@@ -219,7 +219,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+![corkit_erd](https://user-images.githubusercontent.com/61858219/85780761-f65f4100-b6f2-11ea-8b4a-fa4f49634a7d.png)
+
 
 <br>
 
