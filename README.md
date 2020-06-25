@@ -21,7 +21,7 @@
 
 ## Overview
 
-_**Cork It** is perfect place for a messy planner! Cork it is a digital cork board that you can store ideas for all your creative needs. This app has all the best parts of planning a project in one space, including, a shopping/to-do list, notes section, color scheme selection and photo inspiration. Use it to plan a party, redecorate a room or even story board a photoshoot.  _
+**Cork It** is perfect place for a messy planner! Cork it is a digital cork board that you can store ideas for all your creative needs. This app has all the best parts of planning a project in one space, including, a shopping/to-do list, notes section, color scheme selection and photo inspiration. Use it to plan a party, redecorate a room or even story board a photoshoot.  
 
 
 <br>
