@@ -220,7 +220,8 @@ src
 
 #### ERD Model
 
-![corkit_erd](https://user-images.githubusercontent.com/61858219/85780761-f65f4100-b6f2-11ea-8b4a-fa4f49634a7d.png)
+![corkit_erd (2)](https://user-images.githubusercontent.com/61858219/86059293-76a5df00-ba30-11ea-9a93-4b03bedbb35c.png)
+
 
 
 <br>
