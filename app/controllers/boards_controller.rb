@@ -10,32 +10,21 @@ class BoardsController < ApplicationController
 
   # GET /boards/1
   def show
-    render json: @board
-  end
-
-  # POST /boards
-  def create
-    @board = Board.new(board_params)
-
-    if @board.save
-      render json: @board, status: :created, location: @board
-    else
-      render json: @board.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /boards/1
-  def update
-    if @board.update(board_params)
-      render json: @board
-    else
-      render json: @board.errors, status: :unprocessable_entity
-    end
+    render json: @board, include: :rooms
   end
 
   # DELETE /boards/1
   def destroy
     @board.destroy
+  end
+
+  def board_to_room
+    @room = Room.find(params[:room_id])
+    @board = Board.find(params[:id])
+
+    @board.rooms << @room
+
+    render json: @board, include: :rooms 
   end
 
   private
