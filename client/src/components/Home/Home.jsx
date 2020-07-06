@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Header from '../../shared/Header';
 
 export default function Home() {
     return (
         <div className= "home">
-            <h1 className="title">Cork It</h1>
+            <Header />
 
             <div>
                 <h3>- Plan</h3>

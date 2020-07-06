@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Home from './Home/Home';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
 import Footer from './shared/Footer';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         </Route>
 
       </header>
+        <Route path='/Login'>
+          <Login />
+        </Route>
 
       <Footer />
     </div>
