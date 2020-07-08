@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Footer from './shared/Footer';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   return (
@@ -15,8 +16,13 @@ function App() {
         </Route>
 
       </header>
-        <Route path='/Login'>
+
+        <Route path='/login'>
           <Login />
+        </Route>
+
+        <Route path='/sign-up'>
+          <SignUp />
         </Route>
 
       <Footer />
