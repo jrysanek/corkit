@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Footer from './shared/Footer';
 import SignUp from './components/SignUp/SignUp';
-
+import Landing from './components/Landing/Landing';
 function App() {
   return (
     <div className="App">
@@ -23,6 +23,10 @@ function App() {
 
         <Route path='/sign-up'>
           <SignUp />
+        </Route>
+
+        <Route path='/landing'>
+          <Landing />
         </Route>
 
       <Footer />
