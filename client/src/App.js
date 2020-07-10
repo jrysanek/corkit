@@ -7,34 +7,23 @@ import Footer from './shared/Footer';
 import SignUp from './components/SignUp/SignUp';
 import Landing from './components/Landing/Landing';
 import Room from './components/Room/Room';
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-        <Route exact path='/'>
-           <Home />
-        </Route>
-
+        <Route exact path='/' component={Home} />
+     
       </header>
 
-        <Route path='/login'>
-          <Login />
-        </Route>
-
-        <Route path='/sign-up'>
-          <SignUp />
-        </Route>
-
-        <Route path='/landing'>
-          <Landing />
-        </Route>
-
-        <Route path='/room'>
-          <Room />
-        </Route>
+        <Route path='/login' component={Login} /> 
+        <Route path='/sign-up' component={SignUp} />
+        <Route path='/landing' component={Landing} />
+        <Route path='/room' component={Room} />
+        
         {/* change path to /landing/room/:id after initial edit is done */}
-
       <Footer />
     </div>
   );

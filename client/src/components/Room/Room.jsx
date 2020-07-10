@@ -10,17 +10,17 @@ import Photos from '../Photos/Photos';
 export default function Room() {
     return (
         <div className="room-container">
-            <Header/>
+            <Header />
             <h1>Room Name Here</h1>
-            <HomeButton/>
+            <HomeButton />
             <button>Sign Out</button>
 
             <div className="room-components">
-                <ShoppingList/>
-                <ToDoList/>
-                <Notes/>
-                <Swatches/>
-                <Photos/>
+                <ShoppingList />
+                <ToDoList />
+                <Notes />
+                <Swatches />
+                <Photos />
             </div>
         </div>
     )
