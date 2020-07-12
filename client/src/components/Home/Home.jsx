@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import Header from '../../shared/Header';
 import { useHistory } from 'react-router-dom'
 
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="home">
             <Header />
 
-            <div>
+            <div className="home-content">
                 <h3>- Plan</h3>
                 <h3>- Create</h3>
                 <h3>- Enjoy</h3>

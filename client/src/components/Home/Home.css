@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.home-content{
+    background-color: #CD7F9B;
+    height: 315px;
+    width: 322px;
+    padding: 0;   
+}

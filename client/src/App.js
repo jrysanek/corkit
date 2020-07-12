@@ -11,20 +11,16 @@ import Room from './components/Room/Room';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
+    <div className="app">
+      <div className="board-bkg">
         <Route exact path='/' component={Home} />
-     
-      </header>
-
         <Route path='/login' component={Login} /> 
         <Route path='/sign-up' component={SignUp} />
         <Route path='/landing' component={Landing} />
-        <Route path='/room' component={Room} />
-        
+        <Route path='/room' component={Room} />    
         {/* change path to /landing/room/:id after initial edit is done */}
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
