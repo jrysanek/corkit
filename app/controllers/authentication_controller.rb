@@ -3,6 +3,7 @@ class AuthenticationController < ApplicationController
 
     # POST /auth/login
     def login
+      puts params
       @user = User.find_by_email(login_params[:email])
       if @user.authenticate(login_params[:password]) #authenticate method provided by Bcrypt and 'has_secure_password'
         @token = encode({ user_id: @user.id })
