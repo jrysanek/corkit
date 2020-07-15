@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from '../../shared/Header';
-import HomeButton from '../../shared/HomeButton';
 import ShoppingList from '../ShoppingList/ShoppingList';
 import ToDoList from '../ToDoList/ToDoList';
 import Swatches from '../Swatches/Swatches';
@@ -13,8 +11,8 @@ export default function Room() {
         <div >
             <div className="room-nav">
                 <h1>Cork It</h1>
-                <h1>Room Name Passed in Here</h1>
-                <HomeButton />
+                <h2>Room Name Passed in Here</h2>
+                <button>Dashboard</button>
                 <button>Sign Out</button>
             </div>
             <div className="room-container">

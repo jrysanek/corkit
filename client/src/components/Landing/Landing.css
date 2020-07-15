@@ -1,0 +1,40 @@
+h1{
+    margin: 0;
+    color: #CA8B8B;
+    font-size: 50px;
+}
+
+
+h2{
+    color: #CA8B8B;
+    font-size: 25px;
+
+}
+.landing{
+    border: 2px solid black;
+    margin: 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
+    width: 90vw;
+    height: 95vh;
+    
+}
+
+.landing-nav{
+    border: 2px solid white;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    /* display: block; */
+}
+span{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.landing-cards-container{
+    border: 2px solid pink; 
+    height:300px;
+    width: 350px;
+    
+
+}
