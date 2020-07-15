@@ -4,4 +4,8 @@ footer{
     font-size: 18px;
     color: #CA8B8B; 
     text-align: center; 
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
 }

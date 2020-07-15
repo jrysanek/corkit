@@ -23,7 +23,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try { 
-            loginUser(form) 
+           let user = await loginUser(form) 
             history.push('/landing')
         } catch (error) {
             console.log(error.message)

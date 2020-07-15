@@ -1,7 +1,7 @@
 import api from './api-helper';
 
 export const getRooms = async () => {
-    const token = localStorage.getItem('authToken');
+    const token = await localStorage.getItem('authToken');
     if (token) {
         api.defaults.headers.common.authorization = `Bearer ${token}`
         const resp = await api.get('/rooms');
@@ -9,7 +9,7 @@ export const getRooms = async () => {
         return resp.data
         
     }
-        return false
+        return []
 }
 
 export const getToDoList = async (id) => {
@@ -17,6 +17,30 @@ export const getToDoList = async (id) => {
     if (token) {
         api.defaults.headers.common.authorization = `Bearer ${token}`
         const resp = await api.get(`/rooms/${id}/to_dos`);
+        console.log(resp)
+        return resp.data
+        
+    }
+        return false
+}
+
+export const createToDo = async (id, data) => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+        api.defaults.headers.common.authorization = `Bearer ${token}`
+        const resp = await api.post(`/rooms/${id}/to_dos`, data);
+        console.log(resp)
+        return resp.data
+        
+    }
+        return false
+}
+
+export const deleteToDo = async (id, toDoId) => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+        api.defaults.headers.common.authorization = `Bearer ${token}`
+        const resp = await api.delete(`/rooms/${id}/to_dos/${toDoId}`);
         console.log(resp)
         return resp.data
         

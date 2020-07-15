@@ -8,6 +8,7 @@ import { getToDoList } from '../../services/room';
 import './Room.css';
 
 export default function Room(props) {
+    const id = props.params.match.params.id 
     const [toDos, setToDos] = useState([])
 
     useEffect(() => {
@@ -15,14 +16,13 @@ export default function Room(props) {
     },[])
 
     const fetch = async () => {
-        let id = props.params.match.params.id 
         let toDosData = await getToDoList(id) 
         setToDos(toDosData)
     }
 
     console.log(props)
     return (
-        <div >
+        <div className="room-main">
             <div className="room-nav">
                 <h1>Cork It</h1>
                 <h2>Room Name Passed in Here</h2>
@@ -32,7 +32,7 @@ export default function Room(props) {
             <div className="room-container">
                 <div className="room-components-a">
                     <ShoppingList />
-                    <ToDoList toDos={toDos}/>
+                    <ToDoList toDos={toDos} id={id} />
                     <Notes />
                 </div>
 
