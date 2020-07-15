@@ -10,25 +10,25 @@ import './Room.css';
 
 export default function Room() {
     return (
-        <div className="room-container">
+        <div >
             <div className="room-nav">
                 <h1>Cork It</h1>
                 <h1>Room Name Passed in Here</h1>
                 <HomeButton />
                 <button>Sign Out</button>
             </div>
+            <div className="room-container">
+                <div className="room-components-a">
+                    <ShoppingList />
+                    <ToDoList />
+                    <Notes />
+                </div>
 
-            <div className="room-components-a">
-                 <ShoppingList />
-                 <ToDoList />
-                 <Notes />
+                <div className="room-components-b">
+                    <Swatches />
+                    <Photos />
+                </div>
             </div>
-
-            <div className="room-components-b">
-                 <Swatches />
-                 <Photos />
-            </div>
-
         </div>
     )
 }
