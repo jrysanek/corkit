@@ -1,0 +1,26 @@
+/* .room-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px; */
+/* } */
+
+h1{
+    margin: 0;
+    color: #CA8B8B;
+}
+
+
+.room-components-a{
+    border: 3px solid black;
+    padding: 8px;
+    height: 850px;
+    width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    margin-top: 80px;
+}
+.room-components-b{
+    
+}

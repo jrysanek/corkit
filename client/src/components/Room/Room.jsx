@@ -6,12 +6,13 @@ import ToDoList from '../ToDoList/ToDoList';
 import Swatches from '../Swatches/Swatches';
 import Notes from '../Notes/Notes';
 import Photos from '../Photos/Photos';
+import './Room.css';
 
 export default function Room() {
     return (
         <div className="room-container">
             <div className="room-nav">
-                <Header />
+                <h1>Cork It</h1>
                 <h1>Room Name Passed in Here</h1>
                 <HomeButton />
                 <button>Sign Out</button>
