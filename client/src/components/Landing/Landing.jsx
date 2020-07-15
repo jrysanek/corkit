@@ -6,14 +6,14 @@ import LandingCards from './LandingCards'
 export default function Landing() {
     return (
         <div className="landing-container">
-            <div>
+            <div className="landing-nav">
                 <Header/>
                 <button>New Room</button>
                 <HomeButton/>
                 <button>Sign Out</button>
             </div> 
 
-            <div>
+            <div className="landing-cards-container">
                 <LandingCards />
             </div>
 

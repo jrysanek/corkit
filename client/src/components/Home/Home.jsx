@@ -17,7 +17,7 @@ export default function Home() {
 
 
     return (
-        <div className="home">
+        <>
             <Header />
 
             <div className="home-content">
@@ -29,6 +29,6 @@ export default function Home() {
                 <button onClick={handleClickSignUp}> Sign Up</button>
             </div>
 
-        </div>
+        </>
     )
 }

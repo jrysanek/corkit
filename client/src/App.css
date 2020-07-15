@@ -1,5 +1,18 @@
-div{
-    width: 110vw;
+
+.app{
+    width: 100vw;
     height: 1800px;
     background-color: #55321F;
+}
+.board-bkg {
+    /* background-image: url(/client/src/components/Images/board.jpg); */
+    margin: 0 auto;
+}
+button{
+    color: #FFEEEE;
+    background-color: #CD7F9B;
+    border-radius: 5px;
+    font-weight: 700;
+    
+
 }

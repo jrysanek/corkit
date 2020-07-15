@@ -1,10 +1,11 @@
 import React from 'react'
+import './Notes.css'
 
 export default function Notes() {
     return (
-        <div className="notepad">
-            <h3>Notes</h3>
-            <textarea placeholder="Notes"></textarea>
+        <div className="notes">
+            <h4>Notes</h4>
+            <textarea placeholder="Add Notes"></textarea>
             <p>+</p>
             <p>-</p>
         </div>

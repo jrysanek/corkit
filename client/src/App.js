@@ -19,8 +19,9 @@ function App() {
         <Route path='/landing' component={Landing} />
         <Route path='/room' component={Room} />    
         {/* change path to /landing/room/:id after initial edit is done */}
-        <Footer />
+        
       </div>
+      <Footer />
     </div>
   );
 }
