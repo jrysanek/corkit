@@ -17,8 +17,8 @@ function App() {
         <Route path='/login' component={Login} /> 
         <Route path='/sign-up' component={SignUp} />
         <Route path='/landing' component={Landing} />
-        <Route path='/room' component={Room} />    
-        {/* change path to /landing/room/:id after initial edit is done */}
+  <Route path='/room/:id' render={params => <Room params={params} />} />    
+       
         
       </div>
       <Footer />

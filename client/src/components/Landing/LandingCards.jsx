@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function LandingCards() {
+export default function LandingCards({name, image, id}) {
+    
+
     return (
         <div className="landing-cards">
-            <p>Image will be passed in here</p>
-            <h6>Room Name passed in here</h6>
-            <button>Edit</button>
+            <img src={image} />
+            <h6>{name}</h6>
+            <Link to={`/room/${id}`}>
+            <button >Edit</button>
+            </Link>
             <button>Delete</button>
          </div>
     )

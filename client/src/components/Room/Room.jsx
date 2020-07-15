@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ShoppingList from '../ShoppingList/ShoppingList';
 import ToDoList from '../ToDoList/ToDoList';
 import Swatches from '../Swatches/Swatches';
 import Notes from '../Notes/Notes';
 import Photos from '../Photos/Photos';
+import { getToDoList } from '../../services/room';
 import './Room.css';
 
-export default function Room() {
+export default function Room(props) {
+    const [toDos, setToDos] = useState([])
+
+    useEffect(() => {
+        fetch()
+    },[])
+
+    const fetch = async () => {
+        let id = props.params.match.params.id 
+        let toDosData = await getToDoList(id) 
+        setToDos(toDosData)
+    }
+
+    console.log(props)
     return (
         <div >
             <div className="room-nav">
@@ -18,7 +32,7 @@ export default function Room() {
             <div className="room-container">
                 <div className="room-components-a">
                     <ShoppingList />
-                    <ToDoList />
+                    <ToDoList toDos={toDos}/>
                     <Notes />
                 </div>
 
