@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
     SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
-    def encode(payload, exp = 24.hours.from_now)
+    def encode(payload, exp = 2.weeks.from_now)
       payload[:exp] = exp.to_i
       JWT.encode(payload, SECRET_KEY)
     end
@@ -14,6 +14,7 @@ class ApplicationController < ActionController::API
     def authorize_request
         header = request.headers['Authorization']
         header = header.split(' ').last if header
+        puts header
         begin
           @decoded = decode(header)
           @current_user = User.find(@decoded[:user_id])

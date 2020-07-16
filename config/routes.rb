@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :rooms
+  
+  resources :rooms do 
+    resources :to_dos
+  end
   resources :boards
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
