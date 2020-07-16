@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './SignUp.css';
 import Header from '../../shared/Header';
 import HomeButton from '../../shared/HomeButton';
 
