@@ -4,3 +4,14 @@
     width: 350px;
     margin-top: 5px;
 }
+.shopping-list h4{
+    text-align: center;
+}
+.shopping-list button{
+    padding: 3px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.shopping-list input{
+    margin-left: 10px;
+}

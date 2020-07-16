@@ -64,7 +64,7 @@ export default function ToDoList({ toDos, id }) {
             <h4>To Do List</h4>
             {toDo.map(toDo =><> 
             {console.log(openEdit[toDo.id])}
-            {openEdit[toDo.id] == false ? <p>{toDo.name}</p> : <input value={toDo.name}></input>}
+            {openEdit[toDo.id] == false ? <p>- {toDo.name}</p> : <input value={toDo.name}></input>}
              <button onClick={() => deleteButton(toDo.id)}>-</button><button onClick={() => editButton(toDo.id)}>edit</button></>)}
             <form onSubmit={(e) => submitToDo(e)}>
                 <input name='name' value={newToDo.name} onChange={(e) => handleInput(e)} placeholder="Add Item"></input>

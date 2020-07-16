@@ -1,55 +1,70 @@
-h1{
-    margin: 0;
-    color: #CA8B8B;
-    font-size: 50px;
-}
-
-
-h2{
-    color: #CA8B8B;
-    font-size: 25px;
-
-}
 .landing{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0 auto;
     background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
     width: 90vw;
-    height: 95vh;
+    height: 92vh;
     
 }
 
+.landing-nav h1{
+    margin-top: 0;
+    color: #CA8B8B;
+    font-size: 60px;
+}
+
+.landing-nav h2{
+    color: #CA8B8B;
+    font-size: 30px;
+}
+
 .landing-nav{
-    border: 2px solid white;
-    margin: 0;
-    padding: 0;
+    /* border: 2px solid white; */
+    margin-bottom: 80px;
     height: 100px;
     display: flex;
     height: 100px;
     justify-content: space-around;
-    padding: 5px 
+    padding-top: 15px 
 }
 
-.landing-cards-container{
-    border: 2px solid pink; 
-    height:300px;
-    width: 350px;
-    
-
-}
-.landing-cards{
-    text-align: center;
-    align-content: center;
-    font-size: 20px;
-    
-}
-.landing-cards img{
-    height: 180px;
-    width: 200px;
-    
-}
 .landing-nav-right button{
     height:40px;
     width: 150px;
+    margin: 0 5px;
+    padding: 5px 8px;
     font-size: 20px;
+    margin-top: 25px;
+    
+}
+
+.landing-cards-container{
+    /* border: 2px solid pink;  */
+    height:320px;
+    width: 300px;    
+}
+
+.landing-cards{
+    text-align: center;
+    align-content: center;
+    /* background-color: rgba(85,50,31,.8); */
+    
+}
+
+.landing-cards img{
+    margin-top: 15px;
+    height: 180px;
+    width: 200px;
+}
+
+.landing-cards h6{
+    margin: 15px auto;
+    font-size: 20px;
+    background-color: #CD7F9B;
+    width: 100px;
+}
+
+.landing-cards button{
+   margin-left: 5px;
+   padding: 5px 7px;
 }

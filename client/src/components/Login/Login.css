@@ -7,7 +7,6 @@
     width: 35vw;
     height:90vh;
     padding: 0;
-    
 }
 .login-form{
     display: flex;
@@ -20,10 +19,10 @@
     width: 20vw;
     height: 40vh;
 }
-button{
+.login-container button{
     margin: 0 5px;
-    padding: 5px 8px;
-    font-size: 15px;
+    padding: 15px 18px;
+    font-size: 20px;
 }
 .login-form input{
     height: 30px;

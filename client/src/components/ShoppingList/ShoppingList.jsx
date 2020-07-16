@@ -6,8 +6,8 @@ export default function ShoppingList() {
         <div className="shopping-list">
             <h4>Shopping List</h4>
             <input placeholder="Add Item"></input>
-            <p>+</p>
-            <p>-</p>
+            <button>+</button>
+            <button>-</button>
             
         </div>
     )

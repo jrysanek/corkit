@@ -5,3 +5,17 @@
     margin-left: 20px; 
     margin-top: 5px;
 }
+.to-do-list h4{
+    text-align: center;
+}
+.to-do-list p{
+    padding-left: 15px;
+}
+.to-do-list button{
+    padding: 3px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.to-do-list input{
+    margin-left: 10px;
+}
