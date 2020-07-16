@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import './Login.css';
 import { useHistory } from 'react-router-dom';
 import Header from '../../shared/Header';
 import HomeButton from '../../shared/HomeButton';
 import { loginUser } from '../../services/auth';
 
 export default function Login() {
+
     let history = useHistory()
     const [form, setForm] = useState({
         email: '',
