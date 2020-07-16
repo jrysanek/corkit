@@ -14,38 +14,52 @@ h2{
 
 .room-container{
     display: flex;
-    margin: 100px auto;
+    margin: 0 auto;
     align-items: center;
     width: 1750px;
-    height: 860px;
-    /* border: 4px solid purple; */
-    /* need to put background cork board in here somehow */
+    height: 790px;
+    border: 2px solid purple;
 }
 
 .room-components-a{
-    /* border: 3px solid black; */
+    border: 3px solid black;
     padding: 0 10px;
-    height: 850px;
+    height: 760px;
     width: 730px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-evenly;
+    /* align-content: space-evenly; */
     justify-content: center;
     /* margin-top: 80px; */
 }
 .room-components-b{
     display: flex;
     flex-wrap: wrap;
-    /* border: 3px solid red; */
-    height: 850px;
+    border: 3px solid red;
+    height: 760px;
     width: 1000px;
-    align-content: space-evenly;
+    /* align-content: space-evenly; */
     justify-content: center;
 
 
 }
 .room-main{
-    /* border: 3px solid black; */
+    border: 3px solid yellow;
     background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
-   
+    width: 90vw;
+    height: 92vh;
+}
+.room-nav{
+    border: 2px solid pink;
+    display: flex;
+    /* height: 100px; */
+    justify-content: space-around;
+    padding: 5px 
+}
+ .room-nav button{
+    height:40px;
+    width: 150px;
+    margin: 0 5px;
+    padding: 5px 8px;
+    font-size: 20px;
 }

@@ -26,8 +26,10 @@ export default function Room(props) {
             <div className="room-nav">
                 <h1>Cork It</h1>
                 <h2>Room Name Passed in Here</h2>
+                <span>
                 <button>Dashboard</button>
                 <button>Sign Out</button>
+                </span>
             </div>
             <div className="room-container">
                 <div className="room-components-a">
