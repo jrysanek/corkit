@@ -5,8 +5,9 @@ export default function Swatches() {
     return (
         <div className="swatches">
             <h4>Swatches</h4>
-            <p>placeholder to add swatches</p>
-            <p>placeholder to delete swatches</p> 
+            <input type="text" placeholder="Add Swatch Url"/>
+            <button>+</button>
+            <button>-</button>
         </div>
     )
 }
