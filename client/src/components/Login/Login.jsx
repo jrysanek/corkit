@@ -35,15 +35,26 @@ export default function Login() {
 
     return (
         <div className="login-container">
+            
             <Header />
 
             <div className="login-form">
                 <form onSubmit={(e) => handleSubmit(e)}>
-                    <input name='email' value={form.email} onChange={handleInput} placeholder='Email'></input>
-                    <input name='password' value={form.password} onChange={handleInput} placeholder='Password'></input>
+                    <input
+                        name='email' 
+                        value={form.email}
+                        onChange={handleInput} 
+                        placeholder='Email'/>
+
+                    <input 
+                        name='password' 
+                        value={form.password} 
+                        onChange={handleInput} 
+                        placeholder='Password'/>
 
                     <button>Login</button>
                 </form>
+                
                 <HomeButton />
 
             </div>

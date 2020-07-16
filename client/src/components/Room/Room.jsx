@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ShoppingList from '../ShoppingList/ShoppingList';
 import ToDoList from '../ToDoList/ToDoList';
 import Swatches from '../Swatches/Swatches';
@@ -23,14 +24,19 @@ export default function Room(props) {
     console.log(props)
     return (
         <div className="room-main">
-            <div className="room-nav">
+            <div className="room-nav"> 
                 <h1>Cork It</h1>
                 <h2>Room Name Passed in Here</h2>
-                <span>
-                <button>Dashboard</button>
-                <button>Sign Out</button>
-                </span>
+                   
+                    <span>
+                         <Link to='/landing'>
+                             <button>Dashboard</button>
+                        </Link>
+
+                        <button>Sign Out</button>
+                    </span>
             </div>
+
             <div className="room-container">
                 <div className="room-components-a">
                     <ShoppingList />
@@ -42,7 +48,9 @@ export default function Room(props) {
                     <Swatches />
                     <Photos />
                 </div>
+
             </div>
+
         </div>
     )
 }
