@@ -44,13 +44,16 @@ export default function Login() {
                         name='email' 
                         value={form.email}
                         onChange={handleInput} 
-                        placeholder='Email'/>
+                        placeholder='Email'
+                        />
 
                     <input 
                         name='password' 
                         value={form.password} 
                         onChange={handleInput} 
-                        placeholder='Password'/>
+                        placeholder='Password'
+                        type='password'
+                        />
 
                     <button>Login</button>
                 </form>
