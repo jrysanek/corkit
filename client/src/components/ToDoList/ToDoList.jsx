@@ -3,7 +3,7 @@ import './ToDoList.css';
 import { createToDo, deleteToDo } from '../../services/room';
 
 
-export default function ToDoList({ toDos, id }) {
+export default function ToDoList({ toDos, id, name }) {
     const [newToDo, setNewToDo] = useState({ name: '' })
     const [toDo, setToDo] = useState([])
     const [openEdit, setOpenEdits] = useState({})
@@ -19,6 +19,7 @@ export default function ToDoList({ toDos, id }) {
 
     useEffect(() => {
         setToDo(toDos)
+        console.log(toDos, "here")
     }, [toDos])
 
     const submitToDo = async (e) => {
@@ -36,7 +37,7 @@ export default function ToDoList({ toDos, id }) {
             openEdits[toDoId] = !openEdits[toDoId]
         }
         setOpenEdits(openEdits)
-        console.log(openEdit)
+        // console.log(openEdit)
     }
 
     const deleteButton = (toDoId) => {
@@ -59,13 +60,16 @@ export default function ToDoList({ toDos, id }) {
         )
     }
 
+    
     return (
         <div className="to-do-list">
             <h4>To Do List</h4>
-            {toDo.map(toDo =><> 
-            {console.log(openEdit[toDo.id])}
+            {toDo.map(toDo => <> 
+            {/* {console.log(openEdit[toDo.id])} */}
             {openEdit[toDo.id] == false ? <p>- {toDo.name}</p> : <input value={toDo.name}></input>}
-             <button onClick={() => deleteButton(toDo.id)}>-</button><button onClick={() => editButton(toDo.id)}>edit</button></>)}
+             <button onClick={() => deleteButton(toDo.id)}>-</button>
+             <button onClick={() => editButton(toDo.id)}>edit</button></>)}
+
             <form onSubmit={(e) => submitToDo(e)}>
                 <input name='name' value={newToDo.name} onChange={(e) => handleInput(e)} placeholder="Add Item"></input>
                 <button>+</button>

@@ -6,7 +6,7 @@ export default function LandingCards({name, image, id}) {
 
     return (
         <div className="landing-cards">
-            <img src={image} />
+            <img src={image} alt={image.name} />
             <h6>{name}</h6>
             <Link to={`/room/${id}`}>
             <button >Edit</button>

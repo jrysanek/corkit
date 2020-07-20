@@ -1,11 +1,24 @@
+/* Desktop View */
+
 .header{
     width: 100vw;
     color: #CA8B8B;
     text-align: center;
     padding: 0px 20px 30px 20px;
     margin: 0 auto;
+    
 
 }
 .header h1{
     font-size: 145px;
+}
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+
+    .header h1{
+        font-size: 165px;
+    }
+
 }

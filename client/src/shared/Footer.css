@@ -1,3 +1,5 @@
+/* Desktop View */
+
 footer{
     background-color: #55321F;
     padding: 0;
@@ -8,4 +10,12 @@ footer{
     bottom: 0;
     text-align: center;
     width: 100vw;
+}
+
+/* Tablet View  */
+
+@media only screen and (max-width: 1024px) {
+    footer{
+        padding-bottom: 10px;
+    }
 }

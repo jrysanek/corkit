@@ -9,32 +9,32 @@ import { getToDoList } from '../../services/room';
 import './Room.css';
 
 export default function Room(props) {
-    const id = props.params.match.params.id 
+    const id = props.params.match.params.id
     const [toDos, setToDos] = useState([])
 
     useEffect(() => {
-        fetch()
-    },[])
+        fetchToDos()
+    }, [])
 
-    const fetch = async () => {
-        let toDosData = await getToDoList(id) 
+    const fetchToDos = async () => {
+        let toDosData = await getToDoList(id)
         setToDos(toDosData)
     }
 
     console.log(props)
     return (
         <div className="room-main">
-            <div className="room-nav"> 
+            <div className="room-nav">
                 <h1>Cork It</h1>
-                <h2>Room Name Passed in Here</h2>
-                   
-                    <span>
-                         <Link to='/landing'>
-                             <button>Dashboard</button>
-                        </Link>
+                <h2>Room name here</h2>
 
-                        <button>Sign Out</button>
-                    </span>
+                <span>
+                    <Link to='/landing'>
+                        <button>Dashboard</button>
+                    </Link>
+
+                    <button>Sign Out</button>
+                </span>
             </div>
 
             <div className="room-container">

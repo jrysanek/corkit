@@ -12,8 +12,8 @@ export default function Landing() {
     },[]) 
 
     const fetchRooms = async () => {
-        let data = await getRooms()
-        setRooms(data)
+        let dataRooms = await getRooms()
+        setRooms(dataRooms)
     }
 
     return (
@@ -29,7 +29,7 @@ export default function Landing() {
             </div> 
 
             <div className="landing-cards-container">
-                {rooms.map(room => <LandingCards name={room.name} image={room.image_url} id={room.id}/> )}
+                {rooms.map(room => <LandingCards name={room.name} image={room.image_url} id={room.id} key={room.id}/> )}
                 
             </div>
 
