@@ -1,3 +1,4 @@
+/* Desktop/Tablet View  */
 
 .app{
     display:flex;
@@ -6,6 +7,7 @@
     background-color: #55321F;
     align-items: center;
 }
+
 .board-bkg {
     background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
     margin: 0 auto;
@@ -13,13 +15,24 @@
     height: 92vh;
     background-position: center;
     background-repeat: no-repeat;
-
 }
+
 button{
     color: #FFEEEE;
     background-color: #CD7F9B;
     border-radius: 5px;
     font-weight: 700;
-    
+}
 
+/* Iphone X View */
+
+@media only screen and (max-width: 375px) {
+
+    .app{
+        width: 377px;
+       
+    }
+    .board-bkg{
+        height: 85vh;
+    }
 }

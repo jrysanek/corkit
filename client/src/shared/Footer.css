@@ -19,3 +19,10 @@ footer{
         padding-bottom: 20px;
     }
 }
+ /* Iphone X View  */
+
+ @media only screen and (max-width: 375px) {
+    footer{ 
+        width: 370px;
+    }
+}

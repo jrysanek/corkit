@@ -54,3 +54,26 @@
     }
 
 }
+
+/* Iphone X View */
+
+@media only screen and (max-width: 375px) {
+    .home-container{
+        width: 80vw;
+        height: 50vh;
+        margin: 140px auto;
+    }
+    .home-content{
+        height: 250px;
+        width: 200px;
+    }
+
+    .home-content h3{
+        font-size: 20px;
+        
+    }
+    .home-content button{
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+}
