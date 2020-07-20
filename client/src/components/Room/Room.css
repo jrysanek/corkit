@@ -1,4 +1,4 @@
-
+/* Desktop View  */
 
 .room-nav h1{
    margin-top: 0;
@@ -60,4 +60,59 @@
     padding: 5px 8px;
     font-size: 20px;
     margin-top: 25px;
+}
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+
+    .room-container{
+        height: 70vh;
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+    .room-nav{
+        display: flex;
+        flex-wrap: wrap;
+        height: 20vh;
+        justify-content: center;
+        
+    }
+    
+    .room-components-a{
+        width: 890px;
+        height: 420px;
+        align-self: flex-start;
+        justify-content: flex-start;
+      
+        
+    }
+    .room-components-b{
+        align-self: flex-start;
+        height: 520px;
+        width: 920px;
+        
+    }
+    .room-nav span{
+        width: 500px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .room-nav span button{
+        margin: 0px 20px 0;
+        width: 200px;
+        height: 65px;
+        font-size: 30px;
+        align-items: center;
+        
+    }
+    .room-nav h1{
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+    .room-nav h2{
+        font-size: 60px;
+        margin: 20px 0 0 0;
+        padding-left: 65px; 
+    }
 }

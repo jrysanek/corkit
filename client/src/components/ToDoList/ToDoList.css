@@ -1,3 +1,5 @@
+/* Desktop View   */
+
 .to-do-list{
     background-color: #EEA58E;
     height: 350px;
@@ -18,4 +20,18 @@
 }
 .to-do-list input{
     margin-left: 10px;
+}
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+    .to-do-list{
+        height: 400px;
+        width: 290px;
+        margin-left: 10px;
+    }
+
+    .to-do-list h4{
+        font-size: 20px;
+    }
 }

@@ -1,3 +1,5 @@
+/* Desktop View */
+
 .photos{
     background-color: #CEB9AD;
     height: 546px;
@@ -6,4 +8,17 @@
 }
 .photos h4{
     text-align: center;
+}
+
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+    .photos{
+        height: 350px;
+        margin: 5px 0;
+    }
+    .photos  h4{
+        font-size: 20px;
+    }
 }

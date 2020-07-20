@@ -18,6 +18,7 @@ function App() {
       const verifiedUser = await verifyUser()
       if (verifiedUser) {
         setUser(verifiedUser)
+        console.log(verifiedUser)
       }  
     }
     handleVerify()
@@ -29,7 +30,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/login' component={Login} /> 
         <Route path='/sign-up' component={SignUp} />
-        <Route path='/landing' component={Landing} />
+        <Route path='/landing'  component={Landing} />
         <Route path='/room/:id' render={params => <Room params={params} />} />    
        
         

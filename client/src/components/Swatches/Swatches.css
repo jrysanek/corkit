@@ -1,3 +1,5 @@
+/* Desktop View  */
+
 .swatches{
     background-color: #E4CACB;
     height: 170px;
@@ -7,4 +9,16 @@
 }
 .swatches h4{
     text-align: center;
+}
+
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+    .swatches{
+        height: 145px;
+    }
+    .swatches h4{
+        font-size: 20px;
+    }
 }

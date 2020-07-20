@@ -1,3 +1,5 @@
+/* Desktop View */
+
 .shopping-list{
     background-color: #E5B9A1;
     height: 350px;
@@ -14,4 +16,16 @@
 }
 .shopping-list input{
     margin-left: 10px;
+}
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+    .shopping-list{
+        width: 290px;
+        height: 400px;
+    }
+    .shopping-list h4{
+        font-size: 20px;
+    }
 }
