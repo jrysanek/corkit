@@ -182,7 +182,7 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Shared    | functional |   n   |   n   | _Will containe the Nav buttons._               |
+|    Shared    | functional |   n   |   n   | _Will contain the Footer and Header._               |
 | SignUp   | functional |   y  |   y   | _Will give the user the ability to make an account._       |
 |  Login    |   functional    |   y   |  y  | _Allows user to Login to account._      |
 | Landing | functional |   y   |   y   | _Where the user is sent to control all Rooms after Login._                 |
@@ -198,15 +198,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Backend framework    |    H    |     6 hrs      |      hrs     |     hrs    |
-| Create Frontend framework |    H     |     6 hrs      |      hrs     |     TBD     |
-|Add Auth to backend  |    H     |     6 hrs      |      hrs     |     TBD     |
-| Connect backend and front end |    H     |     4 hrs      |     hrs     |     TBD     |
-| CRUD BACKEND |    H     |     8 hrs      |      hrs     |     TBD     |
+| Create Backend framework    |    H    |     6 hrs      |      8hrs     |    8 hrs    |
+| Create Frontend framework |    H     |     6 hrs      |      8hrs     |     8hrs    |
+|Add Auth to backend  |    H     |     6 hrs      |      6hrs     |    6hrs     |
+| Connect backend and front end |    H     |     4 hrs      |    6 hrs     |     6hrs    |
+| CRUD BACKEND |    H     |     8 hrs      |      8hrs     |    8hrs   |
 | CRUD Frontend |    H     |     8 hrs      |      hrs     |     TBD     |
-| Test backend functionality |    H     |     3 hrs      |      hrs     |     TBD     |
+| Test backend functionality |    H     |     3 hrs      |      3hrs     |     3hrs   |
 | Test front end functionality |    H     |    3  hrs      |      hrs     |     TBD     |
-| Add Styling |    H     |     8 hrs      |      hrs     |     TBD     |
+| Add Styling |    H     |     10 hrs      |      10hrs     |    10hrs    |
 | Finish Styling|    H     |     7 hrs      |      hrs     |     TBD     |
 | Testing |    H     |     6 hrs      |       hrs     |     TBD     |
 |Deploy |    H     |     6 hrs      |       hrs     |     TBD     |
