@@ -20,7 +20,7 @@ export default function Landing() {
         <div className="landing">
             <div className="landing-nav">
                 <h1>Cork It</h1>
-                <h2>Welcome,</h2>
+                <h2>Welcome,Jessica </h2>
                     <span className="landing-nav-right">
                         <HomeButton/>
                         <button>New Room</button>

@@ -33,7 +33,6 @@
 
 @media only screen and (max-width: 1024px) {
     .home-container{
-        /* border: 2px solid white; */
         width: 55vw;
         height: 60vh;
         margin: 210px auto;
