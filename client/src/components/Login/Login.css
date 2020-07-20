@@ -58,6 +58,27 @@
         font-size: 18px;
     }
 
+}
 
-        
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+    .login-container{
+        width: 85vw;
+        height: 60vh;
+        margin: 140px auto;
+    }
+    .login-form{
+        height: 330px;
+        width: 300px;
+    }
+    .login-form input{
+        width: 250px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .login-form button{
+        padding: 15px 25px;
+        font-size: 15px;
+    }
 }
