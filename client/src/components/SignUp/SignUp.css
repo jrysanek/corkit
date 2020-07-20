@@ -1,3 +1,5 @@
+/* Desktop View */
+
 .sign-up-container{
     display: flex;
     flex-wrap: wrap;
@@ -42,4 +44,36 @@ form{
     width: 17vw;
     margin: 20px auto;
     
+}
+
+/* Tablet View */
+
+@media only screen and (max-width: 1024px) {
+
+    .sign-up-container{
+        width: 55vw;
+        height: 60vh;
+        margin: 200px auto;
+    }
+
+    .sign-up-form{
+        height: 400px;
+        width: 412px;
+    }
+
+    .sign-up-form form button{
+        padding: 12px 25px;
+        font-size: 25px;
+    }
+
+    .sign-up-form input{
+        width: 330px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .sign-up-form button{
+        padding: 12px 25px;
+        font-size: 25px;
+    }
 }
