@@ -116,3 +116,54 @@
         padding-left: 65px; 
     }
 }
+
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+    .room-container{
+        height:68vh;
+        width: 89vw;
+        overflow: scroll;
+    }
+    .room-nav{
+        height: 20vh;
+        width: 89vw;
+        padding: 0;
+        margin: 0px 2px 0 0px;
+        justify-content: center
+    }
+    .room-nav h1{
+        font-size: 65px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .room-nav h2{
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 0;
+        width: 160px;
+        height: 25px;
+        
+    }
+    .room-nav span{
+        padding: 0;
+        height: 5vh;
+        margin-top: 3px;
+        width: 56vw;
+        
+    }
+    .room-nav span button{
+        margin: 5px;
+        width: 90px;
+        height: 36px;
+        font-size: 12px;
+    }
+    .room-components-a{
+        overflow: scroll;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .room-components-b{
+        overflow: scroll;
+    }
+}

@@ -22,3 +22,16 @@
         font-size: 20px;
     }
 }
+
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+    .photos{
+        width: 320px;
+        height: 350px;
+        padding-bottom: 10px;
+    }
+    .photos h4{
+        font-size: 15px;
+    }
+}

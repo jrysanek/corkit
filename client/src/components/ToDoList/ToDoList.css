@@ -35,3 +35,32 @@
         font-size: 20px;
     }
 }
+
+
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+    .to-do-list{
+        width: 390px;
+        height: 240px;
+        margin-left: 0;
+    }
+    .to-do-list h4{
+        font-size: 15px;
+    }
+    .to-do-list p{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .to-do-list button{
+        padding: 2px 3px;
+        font-size: 10px;
+        text-align: center;
+        margin-left: 5px;
+    }
+    .to-do-list input{
+        padding: 0;
+        width: 100px;
+        margin: 0;
+    }
+}

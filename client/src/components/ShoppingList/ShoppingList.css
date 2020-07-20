@@ -29,3 +29,28 @@
         font-size: 20px;
     }
 }
+
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+    .shopping-list{
+        width: 390px;
+        height: 240px;
+        margin-left: 0;
+    }
+    .shopping-list h4{
+        font-size: 15px;
+    }
+    .shopping-list button{
+        padding: 2px 3px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .shopping-list p{
+        font-size: 10px;
+    }
+    .shopping-list input{
+        padding: 0;
+        width: 100px;
+    }
+}
