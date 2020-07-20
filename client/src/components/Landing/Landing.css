@@ -131,3 +131,72 @@
     }
 
 }
+
+/* Iphone X View  */
+
+@media only screen and (max-width: 375px) {
+
+    .landing{
+        height: 85vh;
+    }
+
+    .landing-nav{
+        height: 20vh;
+        padding: 0;
+        margin: 2px 2px 0 2px;
+    }
+
+    .landing-nav-right{
+        padding: 0;
+        height: 5vh;
+        margin-top: 3px;
+    }
+
+    .landing-nav-right button{
+        margin: 5px;
+        width: 90px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .landing-nav h1{
+        font-size: 65px;
+        margin-bottom: 0;
+        padding: 0;
+
+    }
+
+    .landing-nav h2{
+        font-size: 30px;
+        margin-top: 0;
+        
+    }
+
+    .landing-cards-container{
+        width: 89vw;
+        height: 64vh;
+    }
+
+    .landing-cards{
+        height: 250px;
+        width: 130px;     
+    }
+
+    .landing-cards h6{
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .landing-cards button{
+
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .landing-cards img{
+        height: 110px;
+        width: 120px;
+    }
+
+}
