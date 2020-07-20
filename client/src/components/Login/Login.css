@@ -1,3 +1,5 @@
+/* Desktop View  */
+
 .login-container{
     display: flex;
     flex-wrap: wrap;
@@ -29,4 +31,33 @@
     width: 17vw;
     margin: 30px auto;
     
+}
+
+/* Tablet View  */
+
+@media only screen and (max-width: 1024px) {
+    .login-container{
+        width: 55vw;
+        height: 60vh;
+        margin: 200px auto;
+    }
+
+    .login-form{ 
+        height: 400px;
+        width: 412px;
+    }
+
+    .login-container button{
+        padding: 15px 25px;
+        font-size: 25px;
+    }
+
+    .login-form input{
+        width: 330px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+
+        
 }
