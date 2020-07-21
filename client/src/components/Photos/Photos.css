@@ -17,6 +17,7 @@
     .photos{
         height: 350px;
         margin: 5px 0;
+        overflow: auto;
     }
     .photos  h4{
         font-size: 20px;

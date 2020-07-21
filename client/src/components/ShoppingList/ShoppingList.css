@@ -5,6 +5,7 @@
     height: 350px;
     width: 350px;
     margin-top: 5px;
+    overflow: auto;
 }
 .shopping-list h4{
     text-align: center;

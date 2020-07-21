@@ -6,6 +6,7 @@
     width: 350px;
     margin-left: 20px; 
     margin-top: 5px;
+    overflow: auto;
 }
 .to-do-list h4{
     text-align: center;

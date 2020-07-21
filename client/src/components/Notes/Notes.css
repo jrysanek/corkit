@@ -4,6 +4,7 @@
     background-color: #CD7F9B;
     height: 350px;
     width: 350px;
+    overflow: auto;
 }
 .notes h4{
     text-align: center;
