@@ -3,6 +3,7 @@ import HomeButton from '../../shared/HomeButton';
 import LandingCards from './LandingCards';
 import { getRooms } from '../../services/room';
 import './Landing.css';
+import SignOut from '../SignOut/SignOut';
 
 export default function Landing() {
     const [rooms, setRooms] = useState([])
@@ -24,7 +25,7 @@ export default function Landing() {
                     <span className="landing-nav-right">
                         <HomeButton/>
                         <button>New Room</button>
-                        <button>Sign Out</button>
+                        <SignOut/>
                     </span>
             </div> 
 

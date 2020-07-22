@@ -8,7 +8,7 @@ export default function LandingCards({name, image, id}) {
         <div className="landing-cards">
             <img src={image} alt={image.name} />
             <h6>{name}</h6>
-            <Link to={`/room/${id}`}>
+            <Link to={{pathname:`/room/${id}`, state: {name: name}}}>
             <button >Edit</button>
             </Link>
             <button>Delete</button>

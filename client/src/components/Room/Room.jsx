@@ -7,9 +7,13 @@ import Notes from '../Notes/Notes';
 import Photos from '../Photos/Photos';
 import { getToDoList } from '../../services/room';
 import './Room.css';
+import SignOut from '../SignOut/SignOut'
 
 export default function Room(props) {
+    console.log(props)
     const id = props.params.match.params.id
+    const name = props.params.location.state.name
+
     const [toDos, setToDos] = useState([])
 
     useEffect(() => {
@@ -21,19 +25,19 @@ export default function Room(props) {
         setToDos(toDosData)
     }
 
-    console.log(props)
+    
     return (
         <div className="room-main">
             <div className="room-nav">
                 <h1>Cork It</h1>
-                <h2>Room name here</h2>
+                <h2>{name}</h2>
 
                 <span>
                     <Link to='/landing'>
                         <button>Dashboard</button>
                     </Link>
 
-                    <button>Sign Out</button>
+                    <SignOut/>
                 </span>
             </div>
 

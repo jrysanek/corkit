@@ -41,7 +41,7 @@ export default function SignUp(props) {
                 // errorMsg: 'Sign-Up details are invalid',
                 email: '',
                 password:'',
-                confirmPassword: ''
+                // confirmPassword: ''
             })
         })
     }
@@ -71,13 +71,13 @@ export default function SignUp(props) {
                     />
 
 
-                    <input 
+                    {/* <input 
                         name='confirmPassword'
                         onChange={handleNewInput} 
                         value={newForm.confirmPassword} 
                         placeholder='Confirm Password'
                         type='password'
-                    />
+                    /> */}
 
                     <button type="submit">Sign Up</button>
                 </form>

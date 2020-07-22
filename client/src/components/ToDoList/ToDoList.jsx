@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ToDoList.css';
+import ToDoItem from '../ToDoItem/ToDoItem';
 import { createToDo, deleteToDo } from '../../services/room';
 
 
@@ -19,7 +20,6 @@ export default function ToDoList({ toDos, id, name }) {
 
     useEffect(() => {
         setToDo(toDos)
-        console.log(toDos, "here")
     }, [toDos])
 
     const submitToDo = async (e) => {
@@ -31,14 +31,12 @@ export default function ToDoList({ toDos, id, name }) {
 
     }
     const editButton = (toDoId) => {
-        // editToDo(id, toDoId)
-        let openEdits = openEdit
-        if(openEdits.hasOwnProperty(toDoId)) {
-            openEdits[toDoId] = !openEdits[toDoId]
-        }
-        setOpenEdits(openEdits)
-        // console.log(openEdit)
-    }
+        setOpenEdits(prevState => ({
+            ...prevState, 
+            [toDoId] : true 
+        }))
+       
+         }
 
     const deleteButton = (toDoId) => {
         deleteToDo(id, toDoId)
@@ -59,16 +57,28 @@ export default function ToDoList({ toDos, id, name }) {
         })
         )
     }
+    
+    const updateToDos = (updatedToDo) => {
+        let toDoArray = toDo
+        let newToDoArray = toDoArray.map(t => {
+            if (t.id === updatedToDo.id) {
+                return updatedToDo
+            } else {
+                return t
+            }
+        })
+     setToDo(newToDoArray)  
+    }
 
     
     return (
         <div className="to-do-list">
             <h4>To Do List</h4>
-            {toDo.map(toDo => <> 
-            {/* {console.log(openEdit[toDo.id])} */}
-            {openEdit[toDo.id] == false ? <p>- {toDo.name}</p> : <input value={toDo.name}></input>}
-             <button onClick={() => deleteButton(toDo.id)}>-</button>
-             <button onClick={() => editButton(toDo.id)}>edit</button></>)}
+            {toDo.map(toDo => <div key={`toDo-${toDo.id}`}> 
+    
+            <ToDoItem name={toDo.name} updateToDos={updateToDos} setOpenEdits={setOpenEdits} roomId={id} openEdit={openEdit} id={toDo.id} deleteButton={deleteButton} editButton={editButton}/>
+        </div>
+             ) }
 
             <form onSubmit={(e) => submitToDo(e)}>
                 <input name='name' value={newToDo.name} onChange={(e) => handleInput(e)} placeholder="Add Item"></input>

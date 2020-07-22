@@ -36,6 +36,20 @@ export const createToDo = async (id, data) => {
         return false
 }
 
+
+export const editToDo = async (id, data, room_id) => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+        api.defaults.headers.common.authorization = `Bearer ${token}`
+        const resp = await api.put(`/rooms/${room_id}/to_dos/${id}`, {"to_do": data});
+        console.log(resp)
+        return resp.data
+        
+    }
+        return false
+}
+
+
 export const deleteToDo = async (id, toDoId) => {
     const token = localStorage.getItem('authToken');
     if (token) {
