@@ -6,7 +6,6 @@ import { editToDo } from '../../services/room';
 
 export default function ToDoItem({ name, id, editButton, deleteButton, openEdit, roomId, setOpenEdits, updateToDos }) {
     const [input, setInput] = useState({name: name})
-    console.log(openEdit)
 
     const handleInputChange = (e) => {
         setInput({name: e.target.value})
@@ -24,7 +23,7 @@ export default function ToDoItem({ name, id, editButton, deleteButton, openEdit,
 
 
     if (openEdit[id] == true) {
-        return <form onSubmit={handleEditSubmit}>
+        return <form className="to-to-item-form" onSubmit={handleEditSubmit}>
                     <input value={input.name} onChange={handleInputChange} />
                     <button>ok</button>
                 </form>

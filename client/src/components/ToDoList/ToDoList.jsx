@@ -74,14 +74,27 @@ export default function ToDoList({ toDos, id, name }) {
     return (
         <div className="to-do-list">
             <h4>To Do List</h4>
+
             {toDo.map(toDo => <div key={`toDo-${toDo.id}`}> 
-    
-            <ToDoItem name={toDo.name} updateToDos={updateToDos} setOpenEdits={setOpenEdits} roomId={id} openEdit={openEdit} id={toDo.id} deleteButton={deleteButton} editButton={editButton}/>
+            <ToDoItem 
+            name={toDo.name}
+            updateToDos={updateToDos} 
+            setOpenEdits={setOpenEdits} 
+            roomId={id} 
+            openEdit={openEdit} 
+            id={toDo.id} 
+            deleteButton={deleteButton} 
+            editButton={editButton}
+            />
+
         </div>
              ) }
 
             <form onSubmit={(e) => submitToDo(e)}>
-                <input name='name' value={newToDo.name} onChange={(e) => handleInput(e)} placeholder="Add Item"></input>
+                <input name='name'
+                 value={newToDo.name} 
+                 onChange={(e) => handleInput(e)} 
+                 placeholder="Add Item"/>
                 <button>+</button>
             </form>
 
