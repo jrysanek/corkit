@@ -10,7 +10,6 @@ import './Room.css';
 import SignOut from '../SignOut/SignOut'
 
 export default function Room(props) {
-    console.log(props)
     const id = props.params.match.params.id
     const name = props.params.location.state.name
 

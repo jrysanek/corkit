@@ -75,6 +75,15 @@ export default function ToDoList({ toDos, id, name }) {
         <div className="to-do-list">
             <h4>To Do List</h4>
 
+            <form onSubmit={(e) => submitToDo(e)}>
+                <input name='name'
+                 value={newToDo.name} 
+                 onChange={(e) => handleInput(e)} 
+                 placeholder="Add Item"/>
+                <button>+</button>
+            </form>
+
+
             {toDo.map(toDo => <div key={`toDo-${toDo.id}`}> 
             <ToDoItem 
             name={toDo.name}
@@ -90,13 +99,7 @@ export default function ToDoList({ toDos, id, name }) {
         </div>
              ) }
 
-            <form onSubmit={(e) => submitToDo(e)}>
-                <input name='name'
-                 value={newToDo.name} 
-                 onChange={(e) => handleInput(e)} 
-                 placeholder="Add Item"/>
-                <button>+</button>
-            </form>
+          
 
         </div>
     )

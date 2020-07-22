@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Footer from './shared/Footer';
@@ -18,20 +18,21 @@ function App() {
       const verifiedUser = await verifyUser()
       if (verifiedUser) {
         setUser(verifiedUser)
-        console.log(verifiedUser)
+        
       }  
     }
     handleVerify()
+    
   },[])
 
   return (
   
-    <div className="app" >
+    <div className="app" user={user}>
       <div className="board-bkg">
         <Route exact path='/' component={Home} />
         <Route path='/login' component={Login} /> 
         <Route path='/sign-up' component={SignUp} />
-        <Route path='/landing'  component={Landing}  />
+        <Route path='/landing'  render={() => user ? <Landing user={user} /> : <Redirect to='/login' />}  />
         <Route path='/room/:id' render={params => <Room params={params} />} />    
        
         

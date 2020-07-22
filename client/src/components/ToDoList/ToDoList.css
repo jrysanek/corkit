@@ -28,6 +28,10 @@
 .to-do-list input{
     margin-left: 10px;
 }
+.to-do-list form{
+    justify-content: left;
+    padding-bottom: 5px;
+}
 
 /* Tablet View */
 

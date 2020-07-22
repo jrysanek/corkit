@@ -113,7 +113,7 @@
     }
 
     .landing-nav h2{
-        font-size: 60px;
+        font-size: 40px;
         margin: 20px 0 0 0; 
     }
 
@@ -167,7 +167,8 @@
     }
 
     .landing-nav h2{
-        font-size: 30px;
+        padding-left: 5px;
+        font-size: 20px;
         margin-top: 0;
         
     }
