@@ -19,6 +19,17 @@ class ToDosController < ApplicationController
         end
         
     end
+
+    def update
+        @to_do= ToDo.find(params[:id])
+         @to_do.update(to_do_params)
+         if @to_do.save 
+            render json: @to_do
+         else
+            render json: {error: @to_do.errors.full_message}
+         end
+    end
+
     def destroy
         @to_do= ToDo.find(params[:id])
         if @to_do.destroy 
