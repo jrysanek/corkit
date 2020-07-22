@@ -25,12 +25,13 @@ function App() {
   },[])
 
   return (
-    <div className="app">
+  
+    <div className="app" >
       <div className="board-bkg">
         <Route exact path='/' component={Home} />
         <Route path='/login' component={Login} /> 
         <Route path='/sign-up' component={SignUp} />
-        <Route path='/landing'  component={Landing} />
+        <Route path='/landing'  component={Landing}  />
         <Route path='/room/:id' render={params => <Room params={params} />} />    
        
         

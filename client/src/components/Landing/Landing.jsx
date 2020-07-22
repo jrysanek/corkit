@@ -5,7 +5,7 @@ import { getRooms } from '../../services/room';
 import './Landing.css';
 import SignOut from '../SignOut/SignOut';
 
-export default function Landing() {
+export default function Landing() {  
     const [rooms, setRooms] = useState([])
 
     useEffect(() => {
