@@ -5,7 +5,8 @@ import { getRooms } from '../../services/room';
 import './Landing.css';
 import SignOut from '../SignOut/SignOut';
 
-export default function Landing() {  
+export default function Landing({user}) {  
+    console.log(user)
     const [rooms, setRooms] = useState([])
 
     useEffect(() => {
@@ -21,7 +22,7 @@ export default function Landing() {
         <div className="landing">
             <div className="landing-nav">
                 <h1>Cork It</h1>
-                <h2>Welcome,   </h2> 
+                <h2>Welcome, {user.email}   </h2> 
                     <span className="landing-nav-right">
                         <HomeButton/>
                         <button>New Room</button>
