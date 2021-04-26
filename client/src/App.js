@@ -31,7 +31,7 @@ function App() {
       <div className="board-bkg">
         <Route exact path='/' component={Home} />
         <Route path='/login' component={Login} /> 
-        <Route path='/sign-up' component={SignUp} />
+        <Route path='/sign-up' render={() => <SignUp setUser={setUser}/>} />
         <Route path='/landing'  render={() => user ? <Landing user={user} /> : <Redirect to='/login' />}  />
         <Route path='/room/:id' render={params => <Room params={params} />} />    
        

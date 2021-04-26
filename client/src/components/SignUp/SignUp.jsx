@@ -10,7 +10,7 @@ export default function SignUp(props) {
     const [ newForm, setNewForm ] = useState({
         email: '',
         password: '',
-        confirmPassword: ''
+        // confirmPassword: ''
         // isError: false,
         // errorMsg:''
     })
